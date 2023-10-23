@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasmine - Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header>
+        <h1>Jasmine</h1>
+		<p>College Student</p>
+		<div class="profile">
+            <img src="jas.1.jpg" alt="Profile Picture">
+	</div>
+        <!--<p>College Student</p>-->
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+   
+                <h2>S.Esai Ananthi @ Jasmine</h2>
+                <p>Studying at</p>
+                <p><h4> Sri Paramakalyani College<br>
+				      Alwarkurichi - 627 412<h4></p>
+            </div>
+			 <div>
+                <p>Hi  I am S.Esai Ananthi @ jasmine.I am 19 years old,BCA student at sri paramakalyani college. </p>
+				<p>I really enjoy solving problems as well as making things pretty and easy to use.I can't stop learning new things the more, the bettter.<br><br></p>
+               
+            </div>
+        </div>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Date of birth: 07.09.2003<br><br>
+		      Age: 19<br><br>
+			  Gender: Female<br><br>
+			  Blood Group: B+ve <br><br>
+			  Type Writting: Completed English Lower <br><br>
+			  Hobbies: Reading books , playing , Drawing<br><br>
+			  Languages Known: Tamil , English</p>
+    </section>
+    
+    <section id="portfolio">
+         <h2>Education</h2>
+          
+            <p>Completed 12 th std <br><br>
+                A.V.Rm.V Matriculation Higher Secondary School - 2021</p>
+		    <p>Studying :Bachelor of Computer Application(BCA)<br><br>
+                 Sri Paramakalyani College </p>
+	        <p><h3>project : <h3>
+			<br> Online Library Management System</p>			 
+			<h3>Objective</h3>
+            <p>To work in an	environment which encourages me to succeed and grow professionaly where 
+                   I can utilize my skills and knowledge appropriately</p>			
+        </div>
+		 <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>C++</li>
+               
+            </ul>
+        </div>
+       
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: esaiananthijasmine@gmail.com<br><br>
+		      Phone: 9994016435</p>
+        
+			  </section>
+    <footer>
+        <p>&copy; 2023 Jasmine </p>
+    </footer>
+   
+	<script>
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+       
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            
+            const offsetTop = targetElement.getBoundingClientRect().top + window.scrollY;
+
+        
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth' 
+            });
+        }
+    });
+});
+
+</script>
+</body>
+</html>
+
